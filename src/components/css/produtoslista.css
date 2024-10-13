@@ -1,0 +1,51 @@
+/* src/ProductList.css */
+body {
+    font-family: FreeMono, monospace;
+    background-color: #090131;
+    margin: 0;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    color: #f8f8f8;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex; 
+    flex-wrap: wrap; 
+    justify-content: space-around; 
+
+}
+
+li {
+    position: relative;
+    
+   
+    max-width: 200px; /* Aumentei um pouco o tamanho dos itens */
+    max-height: 200px;
+    background: #6495ED;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 15px;
+    transition: transform 0.2s;
+    flex: 1 1 200px; /* Faz os itens ocuparem o espaço disponível, até 200px */
+    box-sizing: border-box; /* Garante que padding e border sejam incluídos no tamanho total do item */
+
+}
+
+li:hover {
+    transform: scale(1.02);
+}
+
+h2 {
+    color: #2c3e50;
+}
+
+p {
+    color: #555;
+    margin: 5px 0;
+}
